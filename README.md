@@ -57,17 +57,17 @@ The larger chunks maintained better readability and provided more effective cont
 retriever = vectorstore.as_retriever(
     search_type="mmr",       # Use Maximum Marginal Relevance
     search_kwargs={
-        "k": 3,              # Return top 3 chunks per query
+        "k": 5,              # Return top 3 chunks per query
         "fetch_k": 10,       # Consider top 10 candidates before MMR
-        "lambda_mult": 0.5   # Balance between relevance and diversity
+        "lambda_mult": 0.7   # Balance between relevance and diversity
     }
 )
 ```
 
 **Test questions demonstrated:**
 
-1. “How much sleep do adults need?” → Retrieved “7–9 hours of sleep daily.”
-2. “How much physical activity should adults get per week?” → Retrieved “150 minutes moderate or 75 minutes vigorous activity per week.”
+1. “How much physical activity should adults get per week?” → Retrieved “150 minutes moderate or 75 minutes vigorous activity per week.”
+2. “How many hours of sleep do adults need daily?” → Retrieved “7–9 hours of sleep daily.”
 
 ---
 
@@ -112,8 +112,8 @@ pip install numpy==6.0.0
 
 ## 🧩 Test Questions
 
-1. “How much sleep do adults need?”
-2. “How much physical activity should adults get per week?”
+1. “How much physical activity should adults get each week?”
+2. “How many hours of sleep do adults need daily?”
 
 ---
 
