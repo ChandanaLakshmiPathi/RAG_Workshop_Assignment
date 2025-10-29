@@ -1,6 +1,7 @@
 
 
 ---
+# RAG System - 1
 
 # 🧠 RAG System - Mindfulness & Stress Relief Coach
 
@@ -156,3 +157,37 @@ The system successfully demonstrates improved performance with:
 This RAG system is specifically tuned for **health and wellness content**, providing reliable, document-grounded answers to fitness and lifestyle questions.
 
 ---
+
+# RAG System - 2 
+
+
+# My RAG System - Career Guidance Assistant
+
+## Topic: Career Guidance & Professional Development
+
+### What I changed:
+- **Documents:** 5 university career guide PDFs about resumes, interviews, and workplace skills.
+
+        Replaced the dataset with **5 Career Guidance PDFs**:
+        
+        * `2024–25-Career-Planning-Guide` 
+        * `2024-HES_resume-and-letter` 
+        * `career-center-resume-writing-guide` 
+        * `cdg_2020_final` 
+        * `resume writing guide web` 
+
+  
+- **Chunking:** Used 1200/50 for optimal context retention.
+- **Retrieval:** Used MMR search (k=3, fetch_k=10, λ=0.5).
+
+### How to run:
+1. Install dependencies  
+   `pip install langchain-community chromadb sentence-transformers`
+2. Place PDFs inside `/data(1)/`
+3. Run notebook or script  
+   `python career_rag.py`
+
+### Test Questions:
+1. What are key sections to include in a resume?  
+2. How can I prepare effectively for an interview?
+
