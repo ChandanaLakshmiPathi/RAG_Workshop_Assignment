@@ -2,7 +2,7 @@
 
 ---
 
-# 🧠 RAG System - Health & Wellness Assistant
+# 🧠 RAG System - Mindfulness & Stress Relief Coach
 
 ## 🩺 Topic: Health, Fitness, and Wellbeing
 
